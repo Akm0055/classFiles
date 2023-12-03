@@ -4,14 +4,14 @@ int main(){
     printf("Enter your number: ");
     scanf("%d",&n);
 
-    while (n)
+    while (n>0)
     {
         p=n%10;//taking last digit
 
         if(p==9)
         {
             p=0;//for 9 making digit zero without affecting next number
-            x=10;
+            // x=10;
         }
         else
         {
@@ -28,7 +28,7 @@ int main(){
         n = n*10+(r%10);
         r = r/10;
     }
-    n*=x;
+    // n*=x;
     printf("your new no is :%d",n);
     
     
