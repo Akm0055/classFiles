@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     int t=80000,m=52,w,/*m=men,w= women*/
-    tl=48,lm=35,lw,
+    tl=48,lm=35,lw,/*tl=total litracy*/
     ilm,ilw;
     w=100-m;
     lw=tl-lm;
