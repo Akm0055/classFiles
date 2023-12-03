@@ -4,7 +4,7 @@ int main(){
     printf("Enter your number: ");
     scanf("%d",&n);
 
-    while (n>0)
+    while (n)
     {
         p=n%10;//taking last digit
 
