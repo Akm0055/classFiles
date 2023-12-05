@@ -2,38 +2,35 @@
 int main()
 {
     
-    int count;
-    char alph='A';
+    int n;
+    char a='A';
     // taking input
     printf("enter no rows: ");
-    scanf("%d",&count);
+    scanf("%d",&n);
     
-    for (int i = count; i >0; i--)
+    for (int i = n; i >0; i--)
     {
         // printing left side of pyramid
-        for (int j = 0; j <= i; j++)
+        for (int j = 0; j < i; j++)
         {
-            printf("%c ",alph++);
-        }
-        // if(i==count)
-        // {
-        //     printf("%c ",++alph);
-        //     alph--;
-        // }
-        // printing spaces
-        for (int k=1; k<(2*(count-i))+1;k++)
-        {
-            printf("_ ");
-        }
-        // printing right side of pyramid
-        // alph--;
-        for (int l=0; l<=i; l++ )
-        { 
-            if( i==0 && l==0)
+            if(i==n && j==5)
             {
-                continue;
+                a++;
+            continue;
             }
-            printf("%c.",--alph);
+            printf("%c ",a++);
+        }
+
+        // printing spaces
+        for (int k=0; k<(2*(n-i))-1;k++)
+        {
+            printf("  ");
+        }
+
+        // printing right side of pyramid
+        for (int l=0; l<i; l++ )
+        { 
+            printf("%c ",--a);
         }
        
         printf("\n");//for new line
