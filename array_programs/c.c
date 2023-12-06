@@ -52,7 +52,6 @@ int main(){
     printf("product of two matrices is :\n");
     printarray(result);
     
-    
 
 return 0;
 }
